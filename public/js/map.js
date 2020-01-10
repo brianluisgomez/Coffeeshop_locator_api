@@ -10,7 +10,7 @@ const map = new mapboxgl.Map({
 //Fetch coffeeshops from API
 
 async function getStores() {
-  const res = await fetch('http://localhost:5500/api/v1/stores');
+  const res = await fetch('api/v1/stores');
   const data = await res.json();
 
   console.log(data);
